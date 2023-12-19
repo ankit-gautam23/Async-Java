@@ -1,0 +1,4 @@
+Talking about Asynchronous programming, It's about bettering the communcation between two entities or if we go more deeper we can say two threads. In Asynchronous programming we majorly focus on making a lifecycle of entity to be free rather than being waiting for other entity to do his work and respond.
+
+Async Programming leads to better resource utilization.
+We can do multiple task binding our tasks to the threads in less time.
