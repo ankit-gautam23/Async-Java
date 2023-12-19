@@ -1,0 +1,10 @@
+CompletableFuture is a class which implements the Future interface.
+
+Like in Future threadPool.submit method which takes the runnable and returns the Future of type wildcard.
+In CompletableFuture we have runasync method which takes a runnable and returns CompletableFuture of void type
+
+In CompletableFuture we can say ke it uses common pool for executing the threads and we can explicitily change the number of threads the common pool can have 
+or else, it will create one thread per task.
+
+we can use threadpool to execute other runnable using the runAsync method with an executor added to it.
+
