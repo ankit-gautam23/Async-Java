@@ -1,0 +1,14 @@
+In both parallel and async programming, we get our hands into threads but the way of execution is different for parallel and async programming respectively. 
+
+In Async programming and parallel programming, one core can execute a threads consist of various tasks in it. But the real difference is, in parallel programming a bigger problem is splitted into small functionalites and then constituted as jobs/ tasks of thread which are executed parallely to give better and fast result.
+
+In parallel programming same job is splitted into jobs on multiple threads to increase the CPU processing of those tasks. then once the first task on thread is completed the second job/task can take over and then thread is executed.
+
+on a bigger picture a big data is chipped into small chunks which maybe extracted from some source as first task of thread and then it is processed as second part or task of the thread.
+
+NOTES:
+
+Asynchronous and parallel workloads runs on one core CPU. So if the system is one core we won't be able to pictorize the efficiency.
+Main threads runs in parallel with Async threads.
+Async programming is same as non blocking
+Parallel is used for high throughput. Async is used for high responsiveness.
