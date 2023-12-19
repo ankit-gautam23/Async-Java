@@ -18,8 +18,12 @@ public class ExceptionCFDemo {
             return result + "1";
         }).thenApplyAsync((result)->{
             System.out.println("Task 3 executing...");
-            return result + "2";
-        }).thenApplyAsync((result)->{
+            return result.charAt(120) + "2";
+        }).exceptionally((ex)->{
+            System.out.println("Recovering from exceptions..");
+            return "recovered result";
+        })
+        .thenApplyAsync((result)->{
             System.out.println("Task 4 executing...");
             return result + "3";
         }).thenApplyAsync((result)->{
