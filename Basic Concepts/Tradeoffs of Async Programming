@@ -1,0 +1,9 @@
+There are several pros and cons that are invovled me we use async programming.
+
+Effiecient Usage of the CPU(High Throughput): We can increase the throughput my running things asynchronously but that have some other factors to like what type of workload it is carrying, what type of services it is commincating with.
+
+Scalabilty and Isolation: Talking about scalability its easy to say we can increase cores of CPU to gain max efficiency. But workload and type of workload is also a trait here which should be considered when we are measuring its capabilities.
+
+Increased complexity: yeah it's hard and complex when multiple threads are involved. Codebase becomes more complex to understand and work on for one who is following traditional way of programming.
+
+Dubugging: Debugging is way harder when we are chossing the Async way. because it doesn't have the sequential way of execution so we need to replicate or reproduce the bug and we may have to give more tries to reproduce the issue.
