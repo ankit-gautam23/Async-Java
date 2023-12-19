@@ -1,1 +1,5 @@
-It is the first thing that brought the threads into the picture in better way.
+It is the first thing that brought the threads(thread support) into the picture in better way.
+
+Basically Future is an objects which wraps the result of an asynchronous operation. We can use it by leveraging the threadpool
+
+In Future Inteface we cannot use the threads which are executed firstly, we cannot treat them as collection and which breaches the code of non blocking. As a result the result of any other thread is blocked if the current thread is working and the statement to use the result of previous thread is written below it.
