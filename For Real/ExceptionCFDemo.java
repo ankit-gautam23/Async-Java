@@ -18,13 +18,13 @@ public class ExceptionCFDemo {
             return result + "1";
         }).thenApplyAsync((result)->{
             System.out.println("Task 3 executing...");
-            return result + "1";
+            return result + "2";
         }).thenApplyAsync((result)->{
             System.out.println("Task 4 executing...");
-            return result + "1";
+            return result + "3";
         }).thenApplyAsync((result)->{
             System.out.println("Task 5 executing...");
-            return result + "1";
+            return result + "4";
         });
 
     }

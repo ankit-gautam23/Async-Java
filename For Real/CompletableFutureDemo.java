@@ -15,7 +15,7 @@ public class CompletableFutureDemo {
         task1.get();
     }
 
-    private static void executeWorkload(String name){
+    private static void executeAsync(String name){
         System.out.println(name);
         sleep(3000);
     }
