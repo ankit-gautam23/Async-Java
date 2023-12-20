@@ -20,6 +20,13 @@ public class ComplexSceneriosDemo {
 
 
         CompletableFuture<CompletableFuture<String>> cf4 = cf1.thenApplyAsync((result)->CompletableFuture.supplyAsync(()-> result + "result n"));
+        
+        CompletableFuture<Integer> cf5 = CompletableFuture.supplyAsync(()->123);
+
+        CompletableFuture<Double> cf6 = cf5.thenCombineAsync(cf2, (stringResult, integerResult) -> {
+            return 12.12;
+        });
+        
         return cf3;
 
     }
