@@ -1,1 +1,9 @@
 In this I will try to bring the exception handling into the picture that how they can be handled in between async processing. And how it can be chained to methods without disturbing the flow or execution pipeline.
+
+So if we are handling exceptions using exceptionally method by chaining the method with other async method it will only take the next methods in the chain in consideration for final result.
+
+But if we use handleAsync method, it takes the result and the exception, it will be called no matter exception is there or not, but with exceptionally method, exceptionally method will be called if and only if exception is occurred.
+
+Another way is to use the whenComplete method which is async in nature and can be used for exception handling and dealing with the exception and the result at the end.
+
+whenComplete is a async method is highly useful method which takes a biconsumer, which takes two arguments and returns nothing out of it. 

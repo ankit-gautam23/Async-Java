@@ -26,7 +26,10 @@ public class ExceptionCFDemo {
         .thenApplyAsync((result)->{
             System.out.println("Task 4 executing...");
             return result + "3";
-        }).thenApplyAsync((result)->{
+        }).whenComplete((result, ex)->{
+            System.out.println("Inside the whenComplete MEthod");
+        })
+        .thenApplyAsync((result)->{
             System.out.println("Task 5 executing...");
             return result + "4";
         });
